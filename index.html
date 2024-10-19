@@ -8,34 +8,23 @@
 </head>
 <body>
 
-    <!-- Login Page -->
-    <div class="login-container">
-        <h1>Login to <span class="highlight">REVENUE</span></h1>
-        <form id="loginForm">
-            <input type="email" id="email" placeholder="Enter your email" required>
-            <input type="password" id="password" placeholder="Enter your password" required>
-            <button type="submit">Login</button>
-        </form>
-    </div>
-
-    <!-- Dashboard -->
+    <!-- Main Layout -->
     <div class="dashboard-container">
         <nav class="sidebar">
             <h2><span class="highlight">REVENUE</span></h2>
             <ul>
-                <li>Overview</li>
-                <li>Revenue</li>
-                <li>Statistics</li>
+                <li><a href="overview.html">Overview</a></li>
+                <li><a href="revenue.html">Revenue</a></li>
+                <li><a href="statistics.html">Statistics</a></li>
             </ul>
         </nav>
         <main class="main-content">
             <header class="dashboard-header">
                 <h1>Dashboard</h1>
             </header>
-            <section class="charts">
-                <div class="chart-container">
-                    <canvas id="revenueChart"></canvas>
-                </div>
+            <section class="page-content">
+                <h2>Welcome to the REVENUE Dashboard</h2>
+                <p>This is your central hub to view key financial data and statistics.</p>
             </section>
         </main>
     </div>
