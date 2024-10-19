@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics - REVENUE Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <nav class="sidebar">
+            <h2><span class="highlight">REVENUE</span></h2>
+            <ul>
+                <li><a href="overview.html">Overview</a></li>
+                <li><a href="revenue.html">Revenue</a></li>
+                <li><a href="statistics.html">Statistics</a></li>
+            </ul>
+        </nav>
+        <main class="main-content">
+            <header class="dashboard-header">
+                <h1>Statistics</h1>
+            </header>
+            <section class="charts">
+                <div class="chart-container">
+                    <canvas id="growthChart"></canvas>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
