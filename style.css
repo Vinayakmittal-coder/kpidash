@@ -9,52 +9,28 @@ body {
 
 /* High contrast headings */
 h1, h2 {
-    color: #ffffff; /* Bright headings */
+    color: #ffffff;
     font-size: 2rem;
     font-weight: bold;
 }
 
-/* Highlight color for certain elements */
+h3 {
+    color: #ff9800; /* Highlight color for small headings */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
 .highlight {
-    color: #ff9800; /* Bright orange for contrast */
+    color: #ff9800;
 }
 
-/* Login Page */
-.login-container {
-    width: 350px;
-    margin: 100px auto;
-    padding: 20px;
-    background-color: #1c1c1c; /* Dark grey box */
-    border-radius: 12px; /* Curved edges */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow */
-    text-align: center;
-}
-
-input, button {
-    width: 100%;
-    margin: 10px 0;
-    padding: 12px;
-    border: none;
-    border-radius: 8px; /* Curved edges */
-}
-
-input {
-    background-color: #333;
-    color: #fff;
-}
-
-button {
-    background-color: #ff9800; /* Orange button */
-    color: #000;
-    cursor: pointer;
-}
-
-/* Dashboard Layout */
+/* Layout for Dashboard */
 .dashboard-container {
     display: flex;
     height: 100vh;
 }
 
+/* Sidebar styles */
 .sidebar {
     width: 200px;
     background-color: #000;
@@ -91,6 +67,33 @@ button {
 .chart-container {
     background-color: #1c1c1c;
     padding: 20px;
-    border-radius: 12px; /* Curved edges for charts */
+    border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.stat-box {
+    background-color: #1c1c1c;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 150px;
+    }
+    
+    .main-content {
+        padding: 10px;
+    }
+
+    .dashboard-header {
+        flex-direction: column;
+    }
+
+    .chart-container, .stat-box {
+        padding: 10px;
+    }
 }
