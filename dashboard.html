@@ -3,60 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REVENUE Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>KPI Dashboard</title>
 </head>
 <body>
-
-    <div class="dashboard-container">
-        <!-- Sidebar Navigation -->
-        <nav class="sidebar">
-            <h2><span class="highlight">REVENUE</span></h2>
-            <ul>
-                <li><a href="dashboard.html">Dashboard</a></li>
-                <li><a href="revenue.html">Revenue</a></li>
-                <li><a href="statistics.html">Statistics</a></li>
-            </ul>
+    <div class="container">
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="settings.html">Settings</a>
+            <a href="index.html">Logout</a>
         </nav>
-
-        <!-- Main Content -->
-        <main class="main-content">
-            <header class="dashboard-header">
-                <h1>Dashboard</h1>
-            </header>
-            
-            <!-- KPI Section -->
-            <section class="kpi-section">
-                <div class="stat-box">
-                    <h3>Sales Target</h3>
-                    <canvas id="salesTargetChart"></canvas>
-                </div>
-                <div class="stat-box">
-                    <h3>Growth Rate</h3>
-                    <canvas id="growthChart"></canvas>
-                </div>
-                <div class="stat-box">
-                    <h3>Average Sales Cycle Length</h3>
-                    <canvas id="salesCycleChart"></canvas>
-                </div>
-                <div class="stat-box">
-                    <h3>Upsell and Cross-sell Rates</h3>
-                    <canvas id="upsellChart"></canvas>
-                </div>
-                <div class="stat-box">
-                    <h3>Customer Acquisition Cost (CAC)</h3>
-                    <canvas id="cacChart"></canvas>
-                </div>
-                <div class="stat-box">
-                    <h3>Average Revenue per Unit (ARPU)</h3>
-                    <canvas id="arpuChart"></canvas>
-                </div>
-            </section>
-
-        </main>
+        <h1>KPI Dashboard</h1>
+        <div class="charts">
+            <canvas id="salesChart"></canvas>
+            <canvas id="acquisitionCostChart"></canvas>
+            <canvas id="upsellChart"></canvas>
+            <canvas id="arpuChart"></canvas>
+        </div>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="app.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
